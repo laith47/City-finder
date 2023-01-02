@@ -84,5 +84,3 @@ export class MapboxComponent implements OnInit {
     }
   }
 }
-
-//ee
