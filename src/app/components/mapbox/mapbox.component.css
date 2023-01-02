@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('src/assets/images/blurry-gradient-haikei.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #034375;
+}
+#map {
+  width: 65vw;
+  height: 65vh;
+}
+/* .geocoder {
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  z-index: 1;
+  width: 50%;
+  left: 50%;
+  margin-left: -25%;
+  top: 10px;
+} */
+.mapboxgl-ctrl-geocoder {
+  max-width: 100%;
+}
+.map{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 75vh;
+}
+.map-child{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin:0;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* @media screen and (min-width: 640px){
+div.mapboxgl-ctrl-geocoder--input {
+    height: 36px;
+    padding: 6px 35px;
+}
+}
+ */
+ .btn {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: inherit;
+}
+.btn:focus {
+  outline: none;
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+.btn-block {
+  display: block;
+  width: 100%;
+}
