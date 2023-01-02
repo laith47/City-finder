@@ -41,6 +41,9 @@ body {
   justify-content: center;
   align-items: center;
 }
+.container-children{
+  margin-top:25px;
+}
 
 /* @media screen and (min-width: 640px){
 div.mapboxgl-ctrl-geocoder--input {

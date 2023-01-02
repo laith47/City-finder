@@ -12,14 +12,14 @@ import * as MapboxGeocoder from '@mapbox/mapbox-gl-geocoder';
 export class MapboxComponent implements OnInit {
   map: mapboxgl.Map;
   geocoder: any;
-  text:string='light'
+  text:string='Light theme'
   json:any;
   DarkStyle = 'mapbox://styles/laith017/clcd363oi002i14p6y607a0rt';
   lightStyle = 'mapbox://styles/mapbox/streets-v11';
   defualtStyle = this.DarkStyle;
   defualtStyleLight = false;
-  lat = 37.75;
-  lng = -122.41;
+  lat =  31.95631055404564;
+  lng = 35.90790099778628;
 
   city = 'london';
   country?: string;
@@ -48,6 +48,8 @@ export class MapboxComponent implements OnInit {
       accessToken: environment.mapbox.accessToken,
       mapboxgl: mapboxgl,
       reverseGeocode: true,
+
+
     });
     this.map.addControl(new mapboxgl.NavigationControl());
     this.map.addControl(
@@ -75,11 +77,11 @@ export class MapboxComponent implements OnInit {
   switchStyle() {
     if (!this.defualtStyleLight) {
       this.defualtStyleLight = !this.defualtStyleLight;
-      this.text='dark'
+      this.text='Dark theme'
       this.map.setStyle(this.lightStyle);
     } else {
       this.defualtStyleLight = !this.defualtStyleLight;
-      this.text='light'
+      this.text='Light theme'
       this.map.setStyle(this.DarkStyle);
     }
   }
