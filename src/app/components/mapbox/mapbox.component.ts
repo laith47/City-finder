@@ -18,8 +18,8 @@ export class MapboxComponent implements OnInit {
   lightStyle = 'mapbox://styles/mapbox/streets-v11';
   defualtStyle = this.DarkStyle;
   defualtStyleLight = false;
-  lat =  31.95631055404564;
-  lng = 35.90790099778628;
+  lat =  51.53272776027648;
+  lng = -0.13227775571092354;
 
   city = 'london';
   country?: string;
@@ -64,15 +64,15 @@ export class MapboxComponent implements OnInit {
     const geoCoder = document.getElementById('geocoder');
     geoCoder.appendChild(this.geocoder.onAdd(this.map));
 
-    this.mapService.getNinjasApi(this.city, this.country, this.state).subscribe(
-      (result) => {
-        this.json=result;
-        console.log(this.json);
-      },
-      (err) => {
-        console.log(err);
-      }
-    );
+    // this.mapService.getNinjasApi(this.city, this.country, this.state).subscribe(
+    //   (result) => {
+    //     this.json=result;
+    //     console.log(this.json);
+    //   },
+    //   (err) => {
+    //     console.log(err);
+    //   }
+    // );
   }
   switchStyle() {
     if (!this.defualtStyleLight) {

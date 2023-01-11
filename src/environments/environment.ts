@@ -6,13 +6,13 @@ export const environment = {
   production: false,
   mapbox: {
     accessToken:
-      'pk.eyJ1IjoibGFpdGgwMTciLCJhIjoiY2xjZDJxdHFiMDg0YjNvbHdwN2p3ODU3ZiJ9.17XSVuhFt9qfEZgxvmU8qA',
+      'ACCESS TOKEN HERE',
   },
   positionStack:{
-    apiKey:'d142ebd1ba3d3f76bac0c8d28a3e0271',
+    apiKey:'ACCESS TOKEN HERE',
   },
   ninjas:{
-    X_Api_Key:'3YP+uhGxUJzL7S/bY+s/sg==0zEaEBJdLyZ3kPby',
+    X_Api_Key:'ACCESS TOKEN HERE',
   }
 };
 
